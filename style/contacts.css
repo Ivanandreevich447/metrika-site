@@ -1,0 +1,98 @@
+.contacts__block {
+  margin-top: 74px;
+  display: flex;
+  gap: 117px;
+}
+
+.contacts__phone:before,
+.contacts__email:before {
+  content: "";
+  top: -48px;
+  left: -6px;
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__phone:before {
+  background-image: url(../resources/contact/ikonka-tel.png);
+}
+
+.contacts__email:before {
+  left: 0;
+
+  background-image: url(../resources/contact/mail.png);
+}
+
+.contacts__phone {
+  display: block;
+  position: relative;
+  font-size: 60px;
+  letter-spacing: -3%;
+  line-height: 61px;
+  color: #121212;
+  text-decoration: none;
+}
+
+.contacts__email {
+  margin-bottom: -120px;
+  position: relative;
+  display: inline-block;
+  font-size: 60px;
+  opacity: 0.5;
+  line-height: 60px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #121212;
+  border-bottom: 2px solid #121212;
+}
+
+@media (max-width: 1199px) {
+  .contacts__block {
+    gap: 114px;
+  }
+
+  .contacts__phone {
+    word-break: normal;
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .contacts__email {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts__block {
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  .contacts__phone {
+    font-size: 35px;
+    line-height: 45.62px;
+  }
+  .contacts__email {
+    font-size: 35px;
+    line-height: 45.62px;
+    opacity: 1;
+  }
+
+  .contacts__link {
+    border-bottom: 0px;
+  }
+
+  .contacts__phone:before,
+  .contacts__email:before {
+    width: 18px;
+    height: 18px;
+  }
+}
