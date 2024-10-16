@@ -28,7 +28,6 @@ body {
   background-color: #f5f5f5;
 }
 
-/* КОМУ ЗАДАТЬ ТЕПЕРЬ ШИРИНУ 1400???? */
 
 .section-menu {
   padding-top: 33px;
@@ -140,7 +139,4 @@ section:nth-child(5) {
   .section-footer {
     padding: 30px 0 26px 0;
   }
-}
-
-@media (max-width: 400px) {
 }
