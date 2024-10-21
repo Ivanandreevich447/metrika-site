@@ -41,7 +41,6 @@ img.service__img {
     row-gap: 80px;
   }
 
-
   .service {
     width: calc(50% - 5px);
   }
@@ -53,7 +52,6 @@ img.service__img {
 }
 
 @media (max-width: 600px) {
-  
   img.service__img {
     height: 240px;
     width: 100%;
