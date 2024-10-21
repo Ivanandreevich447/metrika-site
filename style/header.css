@@ -20,7 +20,7 @@ header {
   margin-left: 0;
 }
 
-@media (hover: hover)  {
+@media (any-hover: hover)  {
 .nav a:hover {
   opacity: 50%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);

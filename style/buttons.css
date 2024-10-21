@@ -10,6 +10,7 @@
   text-align: center;
   color: #ad1818;
   background-color: #fff;
+  transition: all 0.8s ease;
 }
 
 .js-btn {
@@ -24,17 +25,21 @@
   text-align: center;
   color: white;
   background-color:#AD1818;
+  transition: all 0.7s ease;
+
 }
 
-@media (hover: hover){
+@media (any-hover: hover){
 .full-width-button:hover {
   background-color: #ad1818;
   color: #fff;
+  transition: all 0.2s ease;
 }
 
 .js-btn:hover {
-  background-color: #fff;
+  background-color: white;
   color: #ad1818;
+  transition: all 0.2s ease;
 }
 
 }
