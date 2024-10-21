@@ -25,6 +25,8 @@
   color: white;
   background-color:#AD1818;
 }
+
+@media (hover: hover){
 .full-width-button:hover {
   background-color: #ad1818;
   color: #fff;
@@ -33,6 +35,8 @@
 .js-btn:hover {
   background-color: #fff;
   color: #ad1818;
+}
+
 }
 
 @media (max-width: 1199px) {
