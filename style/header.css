@@ -1,36 +1,145 @@
+@media (any-hover: hover) {
+  .nav a:hover {
+    opacity: 50%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
 header {
   margin-top: 33px;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  
+.body_fixed {
+  overflow: hidden;
 }
 
-.nav a {
-  margin-left: 58px;
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 60px;
+}
+
+.nav__link {
+  display: block;
   font-size: 18px;
   text-transform: uppercase;
   line-height: 25px;
   color: #000;
 }
-.nav a:first-child {
-  margin-left: 0;
+
+.burger__nav {
+  display: none;
 }
 
-@media (any-hover: hover)  {
-.nav a:hover {
-  opacity: 50%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+.burger-btn {
+  display: none;
 }
+
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease;
+  z-index: 90;
 }
+
+.burger_open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger__content {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  padding-top: 80px;
+  padding-left: 30px;
+  width: 275px;
+  background-color: #fff;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.burger__nav {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.burger__nav__link {
+  display: block;
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: 25px;
+  color: #000;
+}
+
+.burger__menu__logo {
+  padding-bottom: 50px;
+}
+
+.burger__contacts__block {
+}
+
+.burger__text {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.48px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.burger__contacts__block {
+  padding-top: 90px;
+  padding-bottom: 65px;
+}
+
+.burger__contacts__phone,
+.burger__contacts__email {
+  font-size: 20px;
+  line-height: 60px;
+  letter-spacing: -0.6px;
+  color: #000;
+}
+
 @media (max-width: 1199px) {
+  .nav {
+    display: none;
+  }
+
+  .burger-btn {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    z-index: 100;
+    display: block;
+    background-image: url(../resources/line.png);
+    color: black;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+  }
+  .burger-btn_open {
+    background-image: url(../resources/close-btn-mobile.png);
+  }
 }
 
 @media (max-width: 767px) {
 }
-
 @media (max-width: 400px) {
 }
