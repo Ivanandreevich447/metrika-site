@@ -1,6 +1,6 @@
 const BURGER_OPENED_CLASSNAME = 'burger_open';
 const BURGER_BTN_OPENED_CLASSNAME = 'burger-btn_open';
-const BODY_FIXED_CLASSNAME_BUURGER = 'body_fixed';
+const BODY_FIXED_CLASSNAME_BURGER = 'body_fixed';
 
 const bodyNodeBurger = document.querySelector('body');
 const burgerNode = document.querySelector('.js-burger');
