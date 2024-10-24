@@ -83,10 +83,18 @@ header {
 
 .burger__nav__link {
   display: block;
+  h100%
   font-size: 25px;
   text-transform: uppercase;
   line-height: 25px;
   color: #000;
+}
+
+.burger__nav__link:hover {
+
+  border:rgba(203, 200, 200, 0.1) 1px solid;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .burger__menu__logo {
