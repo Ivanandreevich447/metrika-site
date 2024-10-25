@@ -36,11 +36,11 @@
 
 .popup__content {
   position: absolute;
-  width: 80%;
+  width: 777px;
   height: 100%;
   border-radius: 10px;
   background-color: #fff;
-  overflow-y: scroll;
+  overflow-y: auto;
   color: black;
   z-index: 100;
   text-align: center;
